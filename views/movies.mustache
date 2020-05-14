@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/version-1/style.css"></link>
+</head>
+<body>
+    <h1>View All Movies</h1>
+
+    <ul>
+    {{#movies}} 
+     
+    <li> <label> {{name}} </label>
+        <form method="POST" action="/movies/delete-movie">
+
+            <input type="hidden" value={{name}} name="name" />
+            
+            <button>Delete</button>
+        </form>
+      </li>
+
+    {{/movies}}
+    </ul>
+
+</body>
+</html>

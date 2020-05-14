@@ -1,0 +1,24 @@
+<html>
+<head></head>
+
+<body>
+    <h1>Add movie</h1>
+
+    <a href="/movies">View All Movies </a>
+
+    <form method="POST" action="/movies/add-movie">
+
+        <input type="text" placeHolder="Enter movie name !" name="name" />
+
+        <button>Add</button>
+    </form>
+
+    {{#name}} 
+        Your mvie to {{name}} has been added
+    {{/name}}
+    <br />
+    
+
+</body>
+
+</html>
